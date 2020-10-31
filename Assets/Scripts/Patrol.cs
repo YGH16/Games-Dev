@@ -15,22 +15,22 @@ public class Patrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nextPoint = 0 % patrolPoints.Length;
+        nextPoint = 0;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, patrolPoints[nextPoint].position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, patrolPoints[nextPoint].position, speed * UnityEngine.Time.deltaTime);
 
         if(Vector2.Distance(transform.position, patrolPoints[nextPoint].position) < 0.2f){
             if(waitTime <= 0){
-                nextPoint = (nextPoint+1) % patrolPoints.Length;
+                nextPoint = ((nextPoint+1) % patrolPoints.Length);
                 waitTime = startWaitTime; 
             }
             else{
-                waitTime -= Time.deltaTime; 
+                waitTime -= UnityEngine.Time.deltaTime; 
             }
         }
     }
