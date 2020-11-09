@@ -309,7 +309,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Ver int 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
 --- !u!1 &215779410
@@ -505,6 +509,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver int 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -696,11 +704,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 842438256272985443, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.424322
+      value: 4.48
       objectReference: {fileID: 0}
     - target: {fileID: 842438256272985443, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6146483
+      value: 1.79
       objectReference: {fileID: 0}
     - target: {fileID: 842438256272985443, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_LocalPosition.z
@@ -745,6 +753,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver int 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -899,6 +911,9 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 1167508078}
   - {fileID: 142589431}
+  pffieldOfView: {fileID: 8111450047785173053, guid: 36d69a36d9437dc49b48d081f9bb1014, type: 3}
+  fov: 45
+  viewDistance: 8
 --- !u!212 &483519709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1134,6 +1149,9 @@ MonoBehaviour:
   - {fileID: 485914760}
   - {fileID: 215779411}
   - {fileID: 913005332}
+  pffieldOfView: {fileID: 8111450047785173053, guid: 36d69a36d9437dc49b48d081f9bb1014, type: 3}
+  fov: 35
+  viewDistance: 10
 --- !u!58 &510896893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1239,6 +1257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Hor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
 --- !u!1 &598732900
@@ -1252,7 +1274,7 @@ GameObject:
   - component: {fileID: 598732902}
   - component: {fileID: 598732901}
   - component: {fileID: 598732903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Open Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Ver int 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
 --- !u!1 &913005331
@@ -1951,7 +1977,7 @@ GameObject:
   - component: {fileID: 997916303}
   - component: {fileID: 997916302}
   - component: {fileID: 997916305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2140,6 +2166,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver int 3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -2362,6 +2392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Ver (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
 --- !u!4 &1132343350 stripped
@@ -2463,6 +2497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Hor 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
 --- !u!1001 &1232467605
@@ -2535,6 +2573,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver int 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -2894,6 +2936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Hor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
 --- !u!1 &1324432463
@@ -3109,6 +3155,9 @@ MonoBehaviour:
   - {fileID: 1412237066}
   - {fileID: 701148339}
   - {fileID: 900063038}
+  pffieldOfView: {fileID: 8111450047785173053, guid: 36d69a36d9437dc49b48d081f9bb1014, type: 3}
+  fov: 50
+  viewDistance: 4
 --- !u!50 &1426416448
 Rigidbody2D:
   serializedVersion: 4
@@ -3445,6 +3494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Hor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
 --- !u!4 &1764633422 stripped
@@ -3510,6 +3563,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -3669,6 +3726,10 @@ PrefabInstance:
     - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
       propertyPath: m_Name
       value: Wall Ver int 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
@@ -4123,6 +4184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Ver
       objectReference: {fileID: 0}
+    - target: {fileID: 5811061903823472635, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74307cd8d84d87d44808171a69fbc167, type: 3}
 --- !u!1001 &5005387313383210194
@@ -4183,6 +4248,10 @@ PrefabInstance:
     - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
       propertyPath: m_Name
       value: Wall Hor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564816006068255187, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f6445567a62e9546a8f48d86e40f707, type: 3}
